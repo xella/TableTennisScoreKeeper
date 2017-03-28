@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.android.tabletennisscorekeeper.GameSettings">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who's playing?"/>
+
+    <EditText
+        android:id="@+id/first_player_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Player 1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS."/>
+
+    <EditText
+        android:id="@+id/second_player_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Player 2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Games in set:"/>
+
+    <RadioGroup
+        android:id="@+id/games_quantity_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/games_quantity_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"/>
+
+        <RadioButton
+            android:id="@+id/games_quantity_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points in game:"/>
+
+    <RadioGroup
+        android:id="@+id/points_quantity_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/points_quantity_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"/>
+
+        <RadioButton
+            android:id="@+id/points_quantity_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/start_game_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:onClick="submitGameSettings"/>
+</LinearLayout>
