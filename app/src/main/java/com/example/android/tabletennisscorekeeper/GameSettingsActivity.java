@@ -44,7 +44,7 @@ public class GameSettingsActivity extends AppCompatActivity {
         RadioGroup rgPoints = (RadioGroup) findViewById(R.id.points_quantity_rg);
 
         // Get selected radio button from radio group
-        int selectedPointsAmountId = rgGames.getCheckedRadioButtonId();
+        int selectedPointsAmountId = rgPoints.getCheckedRadioButtonId();
 
         // Find the radio button by returned id
         RadioButton amountOfPointsRadioBtn = (RadioButton) findViewById(selectedPointsAmountId);
