@@ -51,7 +51,8 @@
                 android:id="@+id/add_point_btn_first_player"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="+1 Point" />
+                android:text="+1 Point"
+                android:onClick="incrementFirstPlayer"/>
         </LinearLayout>
 
         <View
@@ -86,7 +87,8 @@
                 android:id="@+id/add_point_btn_second_player"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="+1 Point" />
+                android:text="+1 Point"
+                android:onClick="incrementSecondPlayer"/>
         </LinearLayout>
     </LinearLayout>
 

@@ -3,9 +3,17 @@ package com.example.android.tabletennisscorekeeper;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class GameScoreActivity extends AppCompatActivity {
+
+    int gameScoreFirstPlayer = 0;
+    int getGameScoreSecondPlayer = 0;
+    int matchScoreFirstPlayer = 0;
+    int matchScoreSecondPlayer = 0;
+    int pointsAmount;
+    int gamesAmount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,4 +43,25 @@ public class GameScoreActivity extends AppCompatActivity {
             secondPlayerName.setText("Player 2");
         }
     }
+
+    public void incrementFirstPlayer(View view) {
+        gameScoreFirstPlayer++;
+        displayScoreForAFirstPlayer(gameScoreFirstPlayer);
+    }
+
+    public void displayScoreForAFirstPlayer(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.first_player_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    public void incrementSecondPlayer(View view) {
+        getGameScoreSecondPlayer++;
+        displayScoreForASecondPlayer(getGameScoreSecondPlayer);
+    }
+
+    public void displayScoreForASecondPlayer(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.second_player_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
 }

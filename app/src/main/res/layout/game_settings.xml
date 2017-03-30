@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context="com.example.android.tabletennisscorekeeper.GameSettings">
+    tools:context="com.example.android.tabletennisscorekeeper.GameSettingsActivity">
 
     <TextView
         android:layout_width="wrap_content"
