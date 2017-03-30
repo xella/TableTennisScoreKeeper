@@ -12,14 +12,14 @@ public class GameScoreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game_score);
 
-        // Getting intent which has started current activity
-        Intent namesIntent = getIntent();
+        // Get intent which has started current activity
+        Intent gameSettingsIntent = getIntent();
 
-        // Creating strings for player's names, which were sent as extra from GameSettingsActivity
-        String firstPlayerNameValue = namesIntent.getStringExtra("FirstPlayerName");
-        String secondPlayerNameValue = namesIntent.getStringExtra("SecondPlayerName");
+        // Create strings for player's names, which were sent as extra from GameSettingsActivity
+        String firstPlayerNameValue = gameSettingsIntent.getStringExtra("FirstPlayerName");
+        String secondPlayerNameValue = gameSettingsIntent.getStringExtra("SecondPlayerName");
 
-        // Finding TextView for first player name and setting its value
+        // Find TextView for first player name and set its value
         TextView firstPlayerName = (TextView) findViewById(R.id.first_player_name_in_game);
         if (firstPlayerNameValue != null && !firstPlayerNameValue.isEmpty()) {
             firstPlayerName.setText(firstPlayerNameValue);
@@ -27,14 +27,12 @@ public class GameScoreActivity extends AppCompatActivity {
             firstPlayerName.setText("Player 1");
         }
 
-
-        // Finding TextView for second player name and setting its value
+        // Find TextView for second player name and set its value
         TextView secondPlayerName = (TextView) findViewById(R.id.second_player_name_in_game);
         if (secondPlayerNameValue != null && !firstPlayerNameValue.isEmpty()) {
             secondPlayerName.setText(secondPlayerNameValue);
         } else {
             secondPlayerName.setText("Player 2");
         }
-
     }
 }
