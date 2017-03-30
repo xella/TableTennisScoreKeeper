@@ -28,7 +28,7 @@ public class GameSettingsActivity extends AppCompatActivity {
         EditText secondPlayerNameEditText = (EditText) findViewById(R.id.second_player_name);
         final String secondPlayerName = secondPlayerNameEditText.getText().toString();
 
-        // Find the radio group for amount of games per set
+        // Find the radio group for amount of games per match
         RadioGroup rgGames = (RadioGroup) findViewById(R.id.games_quantity_rg);
 
         // Get selected radio button from radio group
@@ -40,7 +40,7 @@ public class GameSettingsActivity extends AppCompatActivity {
         // Get string value of checked radio button
         String amountOfGamesValue = amountOfGamesRadioBtn.getText().toString();
 
-        // Find the radio group for amount of games per set
+        // Find the radio group for amount of points per game
         RadioGroup rgPoints = (RadioGroup) findViewById(R.id.points_quantity_rg);
 
         // Get selected radio button from radio group
@@ -50,14 +50,14 @@ public class GameSettingsActivity extends AppCompatActivity {
         RadioButton amountOfPointsRadioBtn = (RadioButton) findViewById(selectedPointsAmountId);
 
         // Get string value of checked radio button
-        String amountofPointsValue = amountOfPointsRadioBtn.getText().toString();
+        String amountOfPointsValue = amountOfPointsRadioBtn.getText().toString();
 
         // Creating new intent for GameScoreActivity with extras and starting an activity
         Intent startGameIntent = new Intent(GameSettingsActivity.this, GameScoreActivity.class);
         startGameIntent.putExtra("FirstPlayerName", firstPlayerName);
         startGameIntent.putExtra("SecondPlayerName", secondPlayerName);
         startGameIntent.putExtra("GamesAmount", amountOfGamesValue);
-        startGameIntent.putExtra("PointAmount", amountofPointsValue);
+        startGameIntent.putExtra("PointsAmount", amountOfPointsValue);
         startActivity(startGameIntent);
     }
 }
