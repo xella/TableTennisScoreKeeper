@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Table Tennis Score Keeper</string>
+    <string name="rules">
+        - A game consists of 11 or 21 points\n
+        - Each player serves 2 or 5 points in a row and then switch server.
+        - If a score is 10-10 or 20-20, the game goes in to extra play until one of the players has gained a lead of 2 points\n
+        - If a score is 10-10 or 20-20, then each server serves only 1 point and then the server is switched.\n
+        - A match is played best 2 of 3 or 3 of 5 games\n
+        - A point is scored after each ball is put into play\n
+        - The edges of the table are part of the legal table surface, but not the sides.\n
+    </string>
 </resources>
