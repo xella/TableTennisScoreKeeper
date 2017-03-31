@@ -1,90 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@color/colorPrimary"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.example.android.tabletennisscorekeeper.GameSettingsActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Who's playing?"/>
+        android:layout_gravity="center"
+        android:layout_margin="32dp">
 
-    <EditText
-        android:id="@+id/first_player_name"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="Player 1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="VS."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Who's playing?"
+                android:textSize="24sp" />
 
-    <EditText
-        android:id="@+id/second_player_name"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="Player 2"/>
+            <EditText
+                android:id="@+id/first_player_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:hint="Player 1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Games in set:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="VS."
+                android:textSize="14sp" />
 
-    <RadioGroup
-        android:id="@+id/games_quantity_rg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <EditText
+                android:id="@+id/second_player_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:hint="Player 2" />
 
-        <RadioButton
-            android:id="@+id/games_quantity_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Games in set:"
+                android:textSize="24dp" />
 
-        <RadioButton
-            android:id="@+id/games_quantity_5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="5"/>
-    </RadioGroup>
+            <RadioGroup
+                android:id="@+id/games_quantity_rg"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Points in game:"/>
+                <RadioButton
+                    android:id="@+id/games_quantity_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="3" />
 
-    <RadioGroup
-        android:id="@+id/points_quantity_rg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/games_quantity_5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </RadioGroup>
 
-        <RadioButton
-            android:id="@+id/points_quantity_11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="11"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Points in game:"
+                android:textSize="24sp" />
 
-        <RadioButton
-            android:id="@+id/points_quantity_21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="21"/>
-    </RadioGroup>
+            <RadioGroup
+                android:id="@+id/points_quantity_rg"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/start_game_button"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Start"
-        android:onClick="submitGameSettings"/>
+                <RadioButton
+                    android:id="@+id/points_quantity_11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="11" />
+
+                <RadioButton
+                    android:id="@+id/points_quantity_21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="21" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/start_game_button"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="submitGameSettings"
+                android:text="Start"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
 </LinearLayout>
