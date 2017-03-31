@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
                 android:gravity="center_horizontal"
-                android:text="Game Score"
+                android:text="@string/game_score_label"
                 android:textSize="24sp" />
 
             <LinearLayout
@@ -48,7 +48,7 @@
                         android:id="@+id/first_player_name_in_game"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Player 1"
+                        android:text="@string/first_player"
                         android:textSize="24dp"
                         android:textStyle="bold" />
 
@@ -57,7 +57,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp"
-                        android:text="0"
+                        android:text="@string/default_score"
                         android:textSize="32dp" />
 
                     <Button
@@ -66,7 +66,7 @@
                         android:layout_height="wrap_content"
                         android:background="@color/colorPrimaryDark"
                         android:onClick="incrementFirstPlayer"
-                        android:text="+ Point"
+                        android:text="@string/add_point_btn"
                         android:textColor="@android:color/white" />
                 </LinearLayout>
 
@@ -87,7 +87,7 @@
                         android:id="@+id/second_player_name_in_game"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Player 2"
+                        android:text="@string/second_player"
                         android:textSize="24dp"
                         android:textStyle="bold" />
 
@@ -96,7 +96,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp"
-                        android:text="0"
+                        android:text="@string/default_score"
                         android:textSize="32dp" />
 
                     <Button
@@ -105,7 +105,7 @@
                         android:layout_height="wrap_content"
                         android:background="@color/colorPrimaryDark"
                         android:onClick="incrementSecondPlayer"
-                        android:text="+ Point"
+                        android:text="@string/add_point_btn"
                         android:textColor="@android:color/white" />
                 </LinearLayout>
             </LinearLayout>
@@ -132,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
                 android:gravity="center_horizontal"
-                android:text="Match Score"
+                android:text="@string/match_score_label"
                 android:textSize="24sp" />
 
             <LinearLayout
@@ -147,7 +147,7 @@
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:padding="8dp"
-                    android:text="0"
+                    android:text="@string/default_score"
                     android:textSize="32dp" />
 
                 <View
@@ -163,7 +163,7 @@
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:padding="8dp"
-                    android:text="0"
+                    android:text="@string/default_score"
                     android:textSize="32dp" />
 
             </LinearLayout>
@@ -179,7 +179,7 @@
         android:layout_margin="32dp"
         android:background="@color/colorPrimaryDark"
         android:onClick="resetAll"
-        android:text="Reset All"
+        android:text="@string/reset_all_btn"
         android:textColor="@android:color/white" />
 
 </LinearLayout>

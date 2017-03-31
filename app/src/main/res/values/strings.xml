@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Table Tennis Score Keeper</string>
+    <string name="app_name">Table Tennis\nScore Keeper</string>
+    <!-- Strings from activity_main layout -->
     <string name="rules">
         - A game consists of 11 or 21 points\n
         - Each player serves 2 or 5 points in a row and then switch server.
@@ -9,4 +10,23 @@
         - A point is scored after each ball is put into play\n
         - The edges of the table are part of the legal table surface, but not the sides.\n
     </string>
+    <string name="rules_btn">Rules</string>
+    <string name="new_game_btn">New game</string>
+
+    <!-- Strings from game_settings layout-->
+    <string name="players_label">Who\'s playing?</string>
+    <string name="first_player">Player 1</string>
+    <string name="versus">VS.</string>
+    <string name="second_player">Player 2</string>
+    <string name="games_amount_label">Games in set:</string>
+    <string name="points_amount_label">Points per game:</string>
+    <string name="start_btn">Start</string>
+
+    <!-- Strings from game_score layout -->
+    <string name="game_score_label">Game Score</string>
+    <string name="add_point_btn">+ Point</string>
+    <string name="default_score">0</string>
+    <string name="match_score_label">Match Score</string>
+    <string name="reset_all_btn">Reset All</string>
+
 </resources>
