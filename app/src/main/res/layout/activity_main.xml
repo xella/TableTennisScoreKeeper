@@ -2,9 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainViewGroup"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
     tools:context="com.example.android.tabletennisscorekeeper.MainActivity">
 
     <LinearLayout
@@ -16,19 +16,16 @@
         android:orientation="vertical">
 
         <TextView
+            style="@style/LogoName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/app_name"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/app_title_size"
-            android:textStyle="italic" />
+            android:text="@string/app_name" />
 
         <ImageView
+            style="@style/LogoImage"
             android:layout_width="@dimen/app_logo_size"
             android:layout_height="@dimen/app_logo_size"
-            android:layout_marginTop="@dimen/app_logo_margin"
-            android:background="@drawable/bg_circle"
             android:src="@drawable/ic_ping_pong" />
 
     </LinearLayout>
@@ -39,22 +36,25 @@
         android:layout_alignParentBottom="true">
 
         <Button
+            style="@style/ActivityMainBtn"
             android:id="@+id/rules_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark"
-            android:text="@string/rules_btn"
-            android:textColor="@android:color/white" />
+            android:text="@string/rules_btn" />
+
+        <View
+            style="@style/ActivityMainDivider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
 
         <Button
+            style="@style/ActivityMainBtn"
             android:id="@+id/new_game_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark"
-            android:text="@string/new_game_btn"
-            android:textColor="@android:color/white" />
+            android:text="@string/new_game_btn" />
 
     </LinearLayout>
 

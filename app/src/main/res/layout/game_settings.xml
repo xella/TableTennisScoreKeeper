@@ -2,67 +2,62 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainViewGroup"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
     android:gravity="center"
     tools:context="com.example.android.tabletennisscorekeeper.GameSettingsActivity">
 
     <android.support.v7.widget.CardView
+        style="@style/CardViewWidget"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/cardview_margin">
+        android:layout_height="wrap_content">
 
         <LinearLayout
+            style="@style/CardViewContentLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="@dimen/cardview_layout_padding">
+            android:gravity="center">
 
             <TextView
+                style="@style/CardViewTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/players_label"
-                android:textSize="@dimen/cardview_title_text_size" />
+                android:text="@string/players_label" />
 
             <EditText
                 android:id="@+id/first_player_name"
+                style="@style/EditTextFields"
                 android:layout_width="@dimen/cardview_content_width"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/cardview_elements_margin"
-                android:layout_marginTop="@dimen/cardview_elements_margin"
                 android:hint="@string/first_player" />
 
             <TextView
+                style="@style/CardViewSubTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/versus"
-                android:textSize="@dimen/cardview_subtitle_text_size" />
+                android:text="@string/versus" />
 
             <EditText
                 android:id="@+id/second_player_name"
+                style="@style/EditTextFields"
                 android:layout_width="@dimen/cardview_content_width"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/cardview_elements_margin"
-                android:layout_marginTop="@dimen/cardview_elements_margin"
                 android:hint="@string/second_player" />
 
             <TextView
+                style="@style/CardViewTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/games_amount_label"
-                android:textSize="@dimen/cardview_title_text_size" />
+                android:text="@string/games_amount_label" />
 
             <RadioGroup
                 android:id="@+id/games_quantity_rg"
                 android:layout_width="@dimen/cardview_content_width"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/cardview_elements_margin"
-                android:layout_marginTop="@dimen/cardview_elements_margin"
                 android:orientation="horizontal">
 
                 <RadioButton
@@ -82,18 +77,16 @@
             </RadioGroup>
 
             <TextView
+                style="@style/CardViewTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/points_amount_label"
-                android:textSize="@dimen/cardview_title_text_size" />
+                android:text="@string/points_amount_label" />
 
             <RadioGroup
                 android:id="@+id/points_quantity_rg"
                 android:layout_width="@dimen/cardview_content_width"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/cardview_elements_margin"
-                android:layout_marginTop="@dimen/cardview_elements_margin"
                 android:orientation="horizontal">
 
                 <RadioButton
@@ -113,13 +106,12 @@
             </RadioGroup>
 
             <Button
+                style="@style/StartBtn"
                 android:id="@+id/start_game_button"
                 android:layout_width="@dimen/cardview_content_width"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
                 android:onClick="submitGameSettings"
-                android:text="@string/start_btn"
-                android:textColor="@android:color/white" />
+                android:text="@string/start_btn" />
         </LinearLayout>
 
     </android.support.v7.widget.CardView>

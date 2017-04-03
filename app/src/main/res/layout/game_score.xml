@@ -2,35 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainViewGroup"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
     android:gravity="center"
     android:orientation="vertical"
     tools:context="com.example.android.tabletennisscorekeeper.GameScoreActivity">
 
     <android.support.v7.widget.CardView
+        style="@style/CardViewWidget"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/cardview_margin_between_cards"
-        android:layout_marginLeft="@dimen/cardview_margin"
-        android:layout_marginRight="@dimen/cardview_margin">
+        android:layout_marginBottom="@dimen/cardview_margin_between_cards">
 
         <LinearLayout
+            style="@style/CardViewContentLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="@dimen/cardview_layout_padding">
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/textView"
+                style="@style/CardViewTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/cardview_elements_margin"
-                android:gravity="center_horizontal"
-                android:text="@string/game_score_label"
-                android:textSize="@dimen/cardview_title_text_size" />
+                android:gravity="center"
+                android:text="@string/game_score_label" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -46,34 +44,31 @@
 
                     <TextView
                         android:id="@+id/first_player_name_in_game"
+                        style="@style/PlayerNameTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/first_player"
-                        android:textSize="@dimen/cardview_title_text_size" />
+                        android:text="@string/first_player" />
 
                     <TextView
                         android:id="@+id/first_player_score"
+                        style="@style/ScoreTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="@dimen/score_text_padding"
-                        android:text="@string/default_score"
-                        android:textSize="@dimen/score_text_size" />
+                        android:text="@string/default_score" />
 
                     <Button
                         android:id="@+id/add_point_btn_first_player"
+                        style="@style/AddPointBtn"
                         android:layout_width="@dimen/add_point_btn_width"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorPrimaryDark"
                         android:onClick="incrementFirstPlayer"
-                        android:text="@string/add_point_btn"
-                        android:textColor="@android:color/white" />
+                        android:text="@string/add_point_btn" />
                 </LinearLayout>
 
                 <View
+                    style="@style/GameScoreDivider"
                     android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="@dimen/cardview_elements_margin"
-                    android:background="@color/colorPrimary" />
+                    android:layout_height="match_parent" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -84,54 +79,52 @@
 
                     <TextView
                         android:id="@+id/second_player_name_in_game"
+                        style="@style/PlayerNameTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/second_player"
-                        android:textSize="@dimen/cardview_title_text_size" />
+                        android:text="@string/second_player" />
 
                     <TextView
                         android:id="@+id/second_player_score"
+                        style="@style/ScoreTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="@dimen/score_text_padding"
-                        android:text="@string/default_score"
-                        android:textSize="@dimen/score_text_size" />
+                        android:text="@string/default_score" />
 
                     <Button
                         android:id="@+id/add_point_btn_second_player"
+                        style="@style/AddPointBtn"
                         android:layout_width="@dimen/add_point_btn_width"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorPrimaryDark"
                         android:onClick="incrementSecondPlayer"
-                        android:text="@string/add_point_btn"
-                        android:textColor="@android:color/white" />
+                        android:text="@string/add_point_btn" />
                 </LinearLayout>
+
             </LinearLayout>
+
         </LinearLayout>
+
     </android.support.v7.widget.CardView>
 
-
     <android.support.v7.widget.CardView
-        android:layout_width="fill_parent"
+        style="@style/CardViewWidget"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="@dimen/cardview_margin"
-        android:layout_marginRight="@dimen/cardview_margin"
-        android:layout_marginTop="@dimen/cardview_margin_between_cards">
+        android:layout_gravity="center">
 
         <LinearLayout
+            style="@style/CardViewContentLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="@dimen/cardview_layout_padding">
+            android:layout_gravity="center">
 
             <TextView
+                style="@style/CardViewTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/cardview_elements_margin"
                 android:gravity="center_horizontal"
-                android:text="@string/match_score_label"
-                android:textSize="@dimen/cardview_title_text_size" />
+                android:text="@string/match_score_label" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -140,29 +133,26 @@
 
                 <TextView
                     android:id="@+id/match_score_first_player"
+                    style="@style/ScoreTextView"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
-                    android:padding="@dimen/score_text_padding"
-                    android:text="@string/default_score"
-                    android:textSize="@dimen/score_text_size" />
+                    android:text="@string/default_score" />
 
                 <View
+                    style="@style/GameScoreDivider"
                     android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="@dimen/cardview_elements_margin"
-                    android:background="@color/colorPrimary" />
+                    android:layout_height="match_parent" />
 
                 <TextView
                     android:id="@+id/match_score_second_player"
+                    style="@style/ScoreTextView"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
-                    android:padding="@dimen/score_text_padding"
-                    android:text="@string/default_score"
-                    android:textSize="@dimen/score_text_size" />
+                    android:text="@string/default_score" />
 
             </LinearLayout>
 
@@ -171,13 +161,11 @@
     </android.support.v7.widget.CardView>
 
     <Button
+        style="@style/ResetAllBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="@dimen/reset_all_btn_margin"
-        android:background="@color/colorPrimaryDark"
         android:onClick="resetAll"
-        android:text="@string/reset_all_btn"
-        android:textColor="@android:color/white" />
+        android:text="@string/reset_all_btn" />
 
 </LinearLayout>

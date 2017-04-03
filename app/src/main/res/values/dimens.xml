@@ -6,9 +6,9 @@
     <dimen name="app_logo_margin">32dp</dimen>
 
     <!-- CardView styles -->
-    <dimen name="cardview_margin">32dp</dimen>
+    <dimen name="cardview_margin">16dp</dimen>
     <dimen name="cardview_margin_between_cards">16dp</dimen>
-    <dimen name="cardview_layout_padding">24dp</dimen>
+    <dimen name="cardview_layout_padding">16dp</dimen>
     <dimen name="cardview_title_text_size">24sp</dimen>
     <dimen name="cardview_subtitle_text_size">16sp</dimen>
     <dimen name="cardview_content_width">250dp</dimen>
@@ -19,8 +19,8 @@
     <dimen name="score_text_padding">16dp</dimen>
 
     <!-- Add Point button styles -->
-    <dimen name="add_point_btn_width">110dp</dimen>
+    <dimen name="add_point_btn_width">100dp</dimen>
 
     <!-- Reset All button styles-->
-    <dimen name="reset_all_btn_margin">32dp</dimen>
+    <dimen name="reset_all_btn_margin">16dp</dimen>
 </resources>

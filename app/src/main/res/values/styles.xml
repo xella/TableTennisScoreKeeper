@@ -8,4 +8,99 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Common styles for main View Groups in all activities -->
+    <style name="MainViewGroup">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!-- Styles for a TextView with an App name-->
+    <style name="LogoName">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/app_title_size</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!-- Styles for an image logo -->
+    <style name="LogoImage">
+        <item name="android:layout_marginTop">@dimen/app_logo_margin</item>
+        <item name="android:background">@drawable/bg_circle</item>
+    </style>
+
+    <!-- Styles for buttons from an activity_main layout -->
+    <style name="ActivityMainBtn">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Styles for a divider from an activity_main layout-->
+    <style name="ActivityMainDivider">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <!-- Styles for a CardView widget -->
+    <style name="CardViewWidget">
+        <item name="android:layout_margin">@dimen/cardview_margin</item>
+    </style>
+
+    <!-- Styles for a LinearLayout inside a CardView -->
+    <style name="CardViewContentLayout">
+        <item name="android:padding">@dimen/cardview_layout_padding</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Styles for a TextViews with a large text -->
+    <style name="CardViewTitle">
+        <item name="android:textSize">@dimen/cardview_title_text_size</item>
+        <item name="android:layout_marginBottom">@dimen/cardview_elements_margin</item>
+        <item name="android:layout_marginTop">@dimen/cardview_elements_margin</item>
+    </style>
+
+    <!-- Styles for a TextViews with a small text -->
+    <style name="CardViewSubTitle">
+        <item name="android:textSize">@dimen/cardview_subtitle_text_size</item>
+        <item name="android:layout_marginBottom">@dimen/cardview_elements_margin</item>
+        <item name="android:layout_marginTop">@dimen/cardview_elements_margin</item>
+    </style>
+
+    <!-- Styles for an EdiText element -->
+    <style name="EditTextFields">
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- Styles for a Start button from a game_settings layout-->
+    <style name="StartBtn">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginTop">@dimen/cardview_elements_margin</item>
+    </style>
+
+    <!-- Styles for TextViews with players names-->
+    <style name="PlayerNameTextView">
+        <item name="android:textSize">@dimen/cardview_title_text_size</item>
+    </style>
+
+    <!-- Styles for TextViews with score-->
+    <style name="ScoreTextView">
+        <item name="android:padding">@dimen/score_text_padding</item>
+        <item name="android:textSize">@dimen/score_text_size</item>
+    </style>
+
+    <!-- Styles for add point buttons from game_score layout-->
+    <style name="AddPointBtn">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Styles for a divider from a game_score layout-->
+    <style name="GameScoreDivider">
+        <item name="android:layout_margin">@dimen/cardview_elements_margin</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!-- Styles for a Reset All button from a game_score layout -->
+    <style name="ResetAllBtn">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_margin">@dimen/reset_all_btn_margin</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
 </resources>
