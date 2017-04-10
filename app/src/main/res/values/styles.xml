@@ -65,6 +65,7 @@
     <!-- Styles for an EdiText element -->
     <style name="EditTextFields">
         <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
     </style>
 
     <!-- Styles for a Start button from a game_settings layout-->
