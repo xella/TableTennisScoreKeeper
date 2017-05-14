@@ -29,4 +29,7 @@
     <string name="match_score_label">Match Score</string>
     <string name="reset_all_btn">Reset All</string>
 
+    <!-- Toast messages -->
+    <string name="match_winner_text">\s won this match.\nCongratulations!</string>
+    <string name="game_winner_text">\s won this game!</string>
 </resources>

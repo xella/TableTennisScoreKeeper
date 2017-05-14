@@ -63,10 +63,10 @@ public class GameScoreActivity extends AppCompatActivity {
             matchScoreFirstPlayer++;
             displayMatchScoreForAFirstPlayer(matchScoreFirstPlayer);
             if (matchScoreFirstPlayer == gamesAmount/2 + 1) {
-                Toast.makeText(this, currentgame.getFirstPlayerName() + " won. Congratulations!", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, currentgame.getFirstPlayerName() + this.getString(R.string.match_winner_text), Toast.LENGTH_LONG).show();
                 resetAll(view);
             } else {
-                Toast.makeText(this, currentgame.getFirstPlayerName() + " won this game", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, currentgame.getFirstPlayerName() + this.getString(R.string.game_winner_text), Toast.LENGTH_LONG).show();
                 resetScore(view);
             }
             return;
@@ -86,10 +86,10 @@ public class GameScoreActivity extends AppCompatActivity {
             matchScoreSecondPlayer++;
             displayMatchScoreForASecondPlayer(matchScoreSecondPlayer);
             if (matchScoreSecondPlayer == gamesAmount/2 + 1) {
-                Toast.makeText(this, currentgame.getSecondPlayerName() + " won. Congratulations!", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, currentgame.getSecondPlayerName() + this.getString(R.string.match_winner_text), Toast.LENGTH_LONG).show();
                 resetAll(view);
             } else {
-                Toast.makeText(this, currentgame.getSecondPlayerName() + " won this game", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, currentgame.getSecondPlayerName() + this.getString(R.string.game_winner_text), Toast.LENGTH_LONG).show();
                 resetScore(view);
             }
             return;
