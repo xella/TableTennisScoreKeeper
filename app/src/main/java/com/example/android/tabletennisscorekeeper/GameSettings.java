@@ -13,10 +13,10 @@ public class GameSettings {
     private String mSecondPlayerName;
 
     // Amount of point in game
-    private int mPointsAmount;
+    int mPointsAmount;
 
     // Amount of games in match
-    private int mGamesAmount;
+    int mGamesAmount;
 
     public GameSettings(String firstPlayerName, String secondPlayerName, int pointsAmount, int gamesAmount) {
         mFirstPlayerName = firstPlayerName;
@@ -31,13 +31,5 @@ public class GameSettings {
 
     public String getSecondPlayerName() {
         return mSecondPlayerName;
-    }
-
-    public int getPointsAmount() {
-        return mPointsAmount;
-    }
-
-    public int getGamesAmount() {
-        return mGamesAmount;
     }
 }
